@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dip"
+    android:layout_marginRight="20dip"
+    android:background="@drawable/edit_text"
+    android:orientation="vertical"
+    tools:context=".ToastErrorActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:text="@string/main_toast_tishi"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/toast_error_tv_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="4dip"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/item_index3_cancle_iv_line" />
+
+    <TextView
+        android:id="@+id/toast_error_tv_know"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dip"
+        android:text="@string/dialog_error_btn"
+        android:textColor="#007AFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

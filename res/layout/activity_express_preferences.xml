@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/express_preferences_top_rv"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/all_top_backgroup" >
+
+        <ImageView
+            style="@style/text_padding_all_5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="iv_left"
+            android:src="@drawable/sender_ddress_top_left_bt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/express_preferences_title"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/express_preferences_bottom_ll"
+        android:layout_below="@+id/express_preferences_top_rv"
+        android:layout_margin="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:orientation="vertical" >
+
+            <com.striveen.express.view.GridviewNoScroll
+                android:id="@+id/express_preferences_gv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:numColumns="2" >
+            </com.striveen.express.view.GridviewNoScroll>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="@string/express_preferences_tv_title"
+                android:textColor="#F08200"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/express_preferences_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#272829" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dip"
+            android:background="@drawable/express_preferences_bt"
+            android:clickable="true"
+            android:onClick="sumbit"
+            android:text="@string/item_receipt_dialog_bt"
+            android:textColor="#c0c0c0"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.Index4Activity" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/item_map_mark_ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/index_map_marka_9"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/index_map_marka1_9" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/item_map_mark_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="实现期时"
+                    android:textColor="@color/TextColorWhite"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/item_map_mark_tv_companyname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="实现日期时"
+                    android:textColor="@color/TextColorWhite"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_map_mark_ll1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-3dip"
+            android:background="@drawable/index_map_marka" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/item_map_mark_tv_companyname1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/item_map_mark_fal"
+                android:layout_alignTop="@+id/item_map_mark_fal"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/index_map_markahh_951" >
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/item_map_mark_iv_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/index_map_marka_951" />
+
+            <FrameLayout
+                android:id="@+id/item_map_mark_fal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@+id/item_map_mark_iv_"
+                android:paddingRight="3dip"
+                android:paddingTop="3dip" >
+
+                <TextView
+                    android:id="@+id/item_map_mark_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/TextColorWhite"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/item_map_mark_tv_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/TextColorWhite"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/item_map_mark_tv_companyname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/item_map_mark_fal"
+                android:layout_below="@+id/item_map_mark_fal"
+                android:ellipsize="end"
+                android:paddingBottom="3dip"
+                android:paddingTop="2dip"
+                android:singleLine="true"
+                android:textColor="@color/TextColorWhite"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/index_map_marka_951" />
+    </FrameLayout>
+
+</LinearLayout>

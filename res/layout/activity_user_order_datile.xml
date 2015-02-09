@@ -1,0 +1,771 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/user_order_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/all_top_backgroup" >
+
+        <ImageView
+            android:id="@+id/user_order_datile_iv_top_left"
+            style="@style/text_padding_all_5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sender_ddress_top_left_bt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/user_order_datile_top_title"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/user_order_top_tv_right"
+            style="@style/text_padding_all_5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="tv_top_right"
+            android:text="@string/index3_top_tetle_right"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <ImageView
+            style="@style/text_padding_all_5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sender_ddress_top_left_bt"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_order_rl_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_order_rl_top"
+        android:background="@drawable/user_order_datile_backgroud" >
+
+        <com.striveen.express.view.AsyImgView
+            android:id="@+id/user_order_datile_aiv_avata"
+            style="@style/text_padding_all_5dip"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_order_datile_avatar" >
+        </com.striveen.express.view.AsyImgView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/user_order_datile_aiv_avata"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/user_order_datile_tv_top_logistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dip"
+                    android:textColor="@color/TextColorWhite"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/user_order_datile_tv_top_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TextColorWhite"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/user_order_datile_tv_order_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dip"
+                    android:text="@string/user_order_datile_tv_num"
+                    android:textColor="@color/TextColorWhite" />
+
+                <com.striveen.express.view.LayoutProductCommentStartView
+                    android:id="@+id/user_order_datile_lcsv_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/user_order_datile_iv_top_phone"
+            style="@style/text_padding_all_5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_order_datile_phone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_order_datitle_ll_pingjia"
+        android:layout_below="@+id/user_order_rl_11"
+        android:layout_marginBottom="15dip"
+        android:paddingLeft="5dip"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/user_order_datile_rl_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/user_order_datile_rl1"
+                style="@style/text_padding_l_10dip"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user_order_datile_backgroup1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_order_datile_rl2"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="-8dip"
+                android:layout_toRightOf="@+id/user_order_datile_rl2"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/user_order_datile_tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:text="@string/index_tv_type_1"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/user_order_datile_tv_start_addr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_user_order_tv_start"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/user_order_datile_tv_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:text="@string/item_user_order_tv_time"
+                    android:textColor="@color/text_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_order_datile_rl2"
+                style="@style/text_padding_l_10dip"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_order_datile_rl1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user_order_datile_point" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user_order_datile_backgroup1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_order_datile_rl4"
+                style="@style/text_padding_l_10dip"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_order_datile_rl2"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user_order_datile_point" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user_order_datile_backgroup1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_order_datile_rl4"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="-8dip"
+                android:layout_toRightOf="@+id/user_order_datile_rl4"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/user_order_datile_tv_orders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:text="@string/user_order_datile_tv_have_orders"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/user_order_datile_tv_end_addr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_user_order_tv_start"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/user_order_datile_tv_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:text="@string/item_user_order_tv_time"
+                    android:textColor="@color/text_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_order_datile_rl6"
+                style="@style/text_padding_l_10dip"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_order_datile_rl4"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user_order_datile_point" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user_order_datile_backgroup1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_order_datile_ll7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_order_datile_rl6"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="-8dip"
+                android:layout_toRightOf="@+id/user_order_datile_rl6"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/user_order_datile_tv_ecipient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dip"
+                    android:text="@string/user_order_datile_tv_have_ecipient"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/user_order_datile_tv_time3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:text="@string/item_user_order_tv_time"
+                    android:textColor="@color/text_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_order_datile_ll8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_order_datile_rl6"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/user_order_datile_ll8_01"
+                        style="@style/text_padding_l_10dip"
+                        android:layout_width="70dip"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/user_order_datile_ll8_001"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_above="@+id/user_order_datile_iv8_001"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/user_order_datile_backgroup1" />
+
+                            <ImageView
+                                android:id="@+id/user_order_datile_iv8_001"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/user_order_datile_point" />
+
+                            <ImageView
+                                android:id="@+id/user_order_datile_ll8_001_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/user_order_datile_iv8_001"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/user_order_datile_backgroup1" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/user_order_datile_point" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/user_order_datile_backgroup1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/user_order_datile_ll8_02"
+                        style="@style/text_padding_l_10dip"
+                        android:layout_width="70dip"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/user_order_datile_last" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/user_order_datile_rl9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/user_order_datile_tv_single_number"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/user_order_datile_ll8_0001"
+                        style="@style/text_padding_l_10dip"
+                        android:layout_width="70dip"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/user_order_datile_backgroup1" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/user_order_datile_rl9_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingBottom="15dip"
+                        android:paddingTop="10dip" >
+
+                        <LinearLayout
+                            android:id="@+id/user_order_datile_ll_single_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="5dip"
+                            android:background="@drawable/user_order_datile_single_numbe_backgroud"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dip"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="3dip"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="2dip"
+                                    android:text="@string/user_order_datile_tv_single_number1"
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/user_order_datile_tv_single_number1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="@string/user_order_datile_tv_single_number11"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dip"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="3dip"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="2dip"
+                                    android:text="@string/user_order_datile_tv_addressee_number"
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/user_order_datile_tv_addressee_phone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="@string/user_order_datile_tv_addressee_number1"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/user_order_datile_ll_no_single_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="5dip"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <RelativeLayout
+                                style="@style/text_padding_tb_5dip"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dip"
+                                android:background="@drawable/edit_text" >
+
+                                <EditText
+                                    android:id="@+id/user_order_datile_et_phone_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:hint="@string/user_order_datile_tv_addressee_number11"
+                                    android:inputType="phone"
+                                    android:lines="1"
+                                    android:maxLength="11"
+                                    android:maxLines="1"
+                                    android:paddingBottom="5dip"
+                                    android:paddingTop="5dip"
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:clickable="true"
+                                    android:onClick="iv_phone"
+                                    android:paddingRight="5dip"
+                                    android:src="@drawable/pay_evaluace_phone" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                style="@style/text_padding_tb_5dip"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dip"
+                                android:background="@drawable/edit_text" >
+
+                                <EditText
+                                    android:id="@+id/user_order_datile_et_single_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null"
+                                    android:digits="0123456789abcdefghigklmnopqrstuvwxyz"
+                                    android:ems="10"
+                                    android:hint="@string/user_order_datile_tv_single_number111"
+                                    android:inputType="textVisiblePassword"
+                                    android:lines="1"
+                                    android:maxLength="30"
+                                    android:maxLines="1"
+                                    android:paddingBottom="5dip"
+                                    android:paddingTop="5dip"
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:clickable="true"
+                                    android:onClick="iv_erweima"
+                                    android:paddingRight="5dip"
+                                    android:src="@drawable/pay_evaluace_erweima" />
+                            </RelativeLayout>
+
+                            <!-- <EditText -->
+                            <!-- android:id="@+id/user_order_datile_et_single_number" -->
+                            <!-- style="@style/etpersonal" -->
+                            <!-- android:layout_width="match_parent" -->
+                            <!-- android:layout_height="wrap_content" -->
+                            <!-- android:background="@drawable/edit_text" -->
+                            <!-- android:hint="@string/user_order_datile_tv_single_number111" -->
+                            <!-- android:inputType="textVisiblePassword" -->
+                            <!-- android:lines="1" -->
+                            <!-- android:maxLength="30" -->
+                            <!-- android:maxLines="1" -->
+                            <!-- android:textSize="18sp" > -->
+
+
+                            <!-- <requestFocus /> -->
+                            <!-- </EditText> -->
+
+
+                            <!-- <EditText -->
+                            <!-- android:id="@+id/user_order_datile_et_phone_number" -->
+                            <!-- style="@style/etpersonal" -->
+                            <!-- android:layout_width="match_parent" -->
+                            <!-- android:layout_height="wrap_content" -->
+                            <!-- android:layout_marginTop="8dip" -->
+                            <!-- android:background="@drawable/edit_text" -->
+                            <!-- android:hint="@string/user_order_datile_tv_addressee_number11" -->
+                            <!-- android:inputType="phone" -->
+                            <!-- android:lines="1" -->
+                            <!-- android:maxLength="11" -->
+                            <!-- android:maxLines="1" -->
+                            <!-- android:textSize="18sp" /> -->
+
+                            <Button
+                                android:id="@+id/user_order_datile_bt_sumbit"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dip"
+                                android:layout_marginTop="8dip"
+                                android:background="@drawable/user_order_datile_sumbit"
+                                android:gravity="center"
+                                android:text="@string/item_receipt_dialog_bt"
+                                android:textColor="@color/TextColorWhite"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_order_datile_ll10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_order_datile_ll8"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    style="@style/text_padding_l_10dip"
+                    android:layout_width="70dip"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/user_order_datile_last" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/user_order_datile_tv_last"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_order_datile_tv_saapunut"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/user_order_datile_tv_last_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/item_user_order_tv_time"
+                        android:textColor="@color/text_gray"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_order_datile_tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_order_datile_ll10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/index_iv_recording1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="tv_send"
+                android:text="@string/index_tv_confirm_receipt1"
+                android:textColor="@color/TextColorWhite"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/user_order_datitle_ll_pingjia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_order_bottom_ll"
+        android:layout_marginBottom="20dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/user_order_tv_pingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="2dip"
+            android:text="@string/user_order_datile_tv_pingjia111"
+            android:textSize="17sp" />
+
+        <com.striveen.express.view.LayoutProductCommentStartView
+            android:id="@+id/user_order_datile_lcsv_start1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/user_order_tv_pingjia" />
+
+        <TextView
+            android:id="@+id/user_order_datile_tv_sumbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/index2_bottom_bt"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/user_order_datile_tv_submit"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_order_bottom_ll"
+        android:src="@drawable/all_line" />
+
+    <LinearLayout
+        android:id="@+id/user_order_bottom_ll"
+        style="@style/text_padding_all_15dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_order_datile_share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dip"
+            android:text="@string/user_order_datile_tv_fenxiang" />
+    </LinearLayout>
+
+</RelativeLayout>

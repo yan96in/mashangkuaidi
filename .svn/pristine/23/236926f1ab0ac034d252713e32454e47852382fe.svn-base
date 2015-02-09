@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/item_my_balance_tv_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:text="aaa"
+        android:textColor="#59595B"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/item_my_balance_tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/item_my_balance_tv_balance1"
+        android:text="aaa"
+        android:textColor="#5A5B5F"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_my_balance_tv_balance1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#5A5B5F"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_my_balance_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:text="aaa"
+        android:textColor="#8A9199" />
+
+</RelativeLayout>

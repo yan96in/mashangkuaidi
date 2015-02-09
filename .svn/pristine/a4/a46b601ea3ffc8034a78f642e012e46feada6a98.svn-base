@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/all_top_backgroup" >
+
+        <ImageView
+            android:id="@+id/history_ddress_iv_top_left"
+            style="@style/text_padding_all_5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sender_ddress_top_left_bt" />
+
+        <EditText
+            android:id="@+id/history_ddress_et_top_center"
+            style="@style/etpersonal1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@+id/history_ddress_bt_top_right"
+            android:layout_toRightOf="@+id/history_ddress_iv_top_left"
+            android:background="@drawable/sender_ddress_top_et"
+            android:hint="@string/sender_address_et"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="15dip"
+            android:textColor="@color/text_gray"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/history_ddress_bt_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/sender_ddress_top_right_bt"
+            android:gravity="center"
+            android:text="@string/Ensure"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/history_ddress_ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="location_address"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dip"
+                android:src="@drawable/index_map_locate" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/history_address_tv_now"
+                    android:textColor="@color/TextColorBlue"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/history_address_tv_now_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/item_user_order_tv_start"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/history_address_tv_place1"
+            style="@style/text_padding_all_5dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_setting_backgroud1"
+            android:gravity="center"
+            android:text="@string/history_address_tv_place"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.striveen.express.view.MyLoadMoreListView
+            android:id="@+id/history_address_mlv_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.striveen.express.view.MyLoadMoreListView>
+    </LinearLayout>
+
+</LinearLayout>

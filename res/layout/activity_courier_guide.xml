@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/courier_guid_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/all_top_backgroup" >
+
+        <ImageView
+            android:id="@+id/courier_guid_iv_top_left"
+            style="@style/text_padding_all_10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="iv_top_left"
+            android:src="@drawable/sender_ddress_top_left_bt" />
+
+        <TextView
+            android:id="@+id/courier_guid_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/user_setting_top_title"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/courier_guid_rl_top" >
+
+        <com.striveen.express.view.LayoutProductInfoInfoShowView
+            android:id="@+id/courier_guid_sv_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

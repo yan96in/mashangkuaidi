@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edit_text"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:id="@+id/item_receipt_dialog_ll_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="25dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/item_receipt_dialog_iv_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/radio_pressed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:text="@string/item_receipt_dialog_tv_title" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/item_receipt_dialog_et_order_number"
+            style="@style/etpersonal12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/edit_text"
+            android:hint="@string/item_receipt_dialog_et_order_number"
+            android:inputType="textVisiblePassword"
+            android:lines="1"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/item_receipt_dialog_et_phone_number"
+            style="@style/etpersonal12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/edit_text"
+            android:hint="@string/item_receipt_dialog_et_phone_nomber"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/item_receipt_dialog_ll_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="25dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/item_receipt_dialog_iv_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/radio_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/item_receipt_dialog_tv" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/item_receipt_dialog_bt_sumbit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/user_login_bt"
+            android:text="@string/item_receipt_dialog_bt"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

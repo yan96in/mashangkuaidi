@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">马上快递</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="text_loadingdata">玩命加载中...</string>
+    <string name="msg_net_not_connected">网络未连接</string>
+    <string name="msg_load_data_failure">数据加载失败</string>
+    <string name="msg_timeout">请求超时</string>
+    <string name="msg_server_error">网络太不给力了，请重试。</string>
+    <string name="neterror">网络太不给力了，请重试。</string>
+    <string name="neterror1">网络太不给力了，请重试。</string>
+    <string name="loadmore">加载更多...</string>
+    <string name="loadmoring">正在加载...</string>
+    <string name="noxiangguannum">暂无相关数据</string>
+    <string name="nosdcard">没有找到Sdcard，应用升级功能将无法使用!</string>
+    <string name="app_version_select">发现新版本(%1$s)</string>
+    <string name="app_version_update">马上更新</string>
+    <string name="app_version_prompt">提示</string>
+    <string name="app_version_newest">您所使用的已是最新版本。</string>
+    <string name="app_version_confirm">确定</string>
+    <string name="app_version_iknow">过会更新</string>
+    <string name="main_toast_tishi">温馨提示</string>
+    <string name="main_toast_quit">是否确认退出？</string>
+    <string name="Ensure">"确定"</string>
+    <string name="Cancel">"取消"</string>
+    <string name="all_toast_afresh_login">"登录超时，请重新登录"</string>
+    <string name="tojson">该次请求标识:%1$s\n数据转成json格式\n</string>
+    <string name="index_top_tetle">马上快递</string>
+    <string name="index_toast_yuyin">例如：我要发快递，从x区x路x号\n发到x省x市x区</string>
+    <string name="index_toast_region_11">正在获取该区域服务情况</string>
+    <string name="index_toast_region">已开通</string>
+    <string name="index_toast_region12">暂未开通</string>
+    <string name="index_toast_region13">该区域暂未开通服务</string>
+    <string name="index_tv_address">请输入收件地址</string>
+    <string name="index_tv_address11">请输入发件地址</string>
+    <string name="index_toast_location_address">正在获取当前位置信息</string>
+    <string name="index_toast_location_address11">正在获取当前位置信息</string>
+    <string name="index_tv_address1">快递公司及目的地</string>
+    <string name="index_tv_immediately_send">立即发送</string>
+    <string name="index_tv_agian_send">重新发送</string>
+    <string name="index_tv_confirm_receipt">确认发出</string>
+    <string name="index_tv_confirm_receipt1">确认发出，去付款</string>
+    <string name="index_tv_communicated">已通知&#160;%1$s&#160;位师傅&#160;等待&#160;%2$s</string>
+    <string name="index2_wait_time">0%1$s:%2$s</string>
+    <string name="index2_wait_time1">0%1$s:0%2$s</string>
+    <string name="index_tv_cancel_send">取消发送</string>
+    <string name="index_tv_recording">录音中...</string>
+    <string name="index_tv_my_locate">我在&#160;%1$s&#160;附近</string>
+    <string name="index_tv_type_1">专人直送</string>
+    <string name="index_tv_type_2">次日同城</string>
+    <string name="index_tv_type_3">异地快件</string>
+    <string name="index_rl1_tv1">马上</string>
+    <string name="index_rl1_tv2">快递</string>
+    <string name="index_left_tv_order">我的快递</string>
+    <string name="index_left_tv_balance">我的余额</string>
+    <string name="index_left_tv_friend">分享给朋友</string>
+    <string name="index_lefSt_tv_setting">设置</string>
+    <string name="index_lefSt_tv_invite">邀请朋友</string>
+    <string name="index_tv_locate">花木路大唐盛世花园</string>
+    <string name="index3_toast_send">已发件</string>
+    <string name="index3_cancle_tv_title">请选择取消订单的原因</string>
+    <string name="index3_cancle_tv_bottom">确定取消</string>
+    <string name="index1_tv_recording_number">00:50</string>
+    <string name="index1_voice_name">音频</string>
+    <string name="index1_tv_voice">准备录音</string>
+    <string name="index1_toast_voice">录音时间太短，请重新录音</string>
+    <string name="index3_top_tetle_right">取消订单</string>
+    <string name="index2_toast">订单已取消</string>
+    <string name="index_province">北京市</string>
+    <string name="index3_toast_waybill_number">运单号格式不正确。请重新输入</string>
+    <!-- 登录 -->
+    <string name="user_tv_phone">手机号码</string>
+    <string name="user_tv_verification">获取验证码</string>
+    <string name="user_et_enter_verification">请输入短信验证码</string>
+    <string name="user_et_enter_phone">请输入手机号码</string>
+    <string name="user_login_send">立即发送</string>
+    <string name="user_login_send1">立即登录</string>
+    <string name="user_login_show_time">获取中&#160;</string>
+    <string name="user_login_top_title">一键登录</string>
+    <string name="user_login_toast_phone">手机号码格式不正确，请重新输入</string>
+    <string name="user_login_toast_verification">短信验证码不能为空</string>
+    <!-- 预约 -->
+    <string name="reservation_top_title">预约</string>
+    <string name="reservation_tv_advance">至少提前20分钟预约</string>
+    <string name="reservation_tv_time">什么时间寄？</string>
+    <string name="reservation_tv_starting">从哪儿寄？</string>
+    <string name="reservation_tv_end">寄到哪儿？</string>
+    <string name="reservation_tv_wv_end">寄到哪儿</string>
+    <string name="reservation_tv_111">辽宁省鞍山市立山区</string>
+    <string name="reservation_mksearch_toast">没有搜索到该地址</string>
+    <string name="sender_address_et">请输入发件地址</string>
+    <string name="sender_address_toast">请先输入发件地址</string>
+    <string name="sender_address_toast_start">发件地址不能为空，请先输入发件地址</string>
+    <string name="sender_address_toast_time">请重新选择时间</string>
+    <string name="sender_address_toast_end">请重新选择收件地址</string>
+    <string name="history_address_tv_now">当前位置</string>
+    <string name="history_address_tv_place">历史地点</string>
+    <!-- 全部订单 -->
+    <string name="user_order_top_title">全部快递</string>
+    <string name="user_order_tv_day">当天快递</string>
+    <string name="user_order_tv_day1">历史快递</string>
+    <string name="user_order_tv_no">无</string>
+    <string name="user_order_tv_pingjia">已评价</string>
+    <!-- 订单详情 -->
+    <string name="user_order_datile_top_title">订单详情</string>
+    <string name="user_order_datile_tv_num">已服务1单</string>
+    <string name="user_order_datile_tv_num1">已服务%1$s单</string>
+    <string name="user_order_datile_tv_pingjia">请对服务进行评价</string>
+    <string name="user_order_datile_tv_pingjia111">评价</string>
+    <string name="user_order_datile_tv_submit">确认评价</string>
+    <string name="user_order_datile_tv_pingjia1">评价结果</string>
+    <string name="user_order_datile_tv_fenxiang">分享给朋友们</string>
+    <string name="user_order_datile_tv_have_orders">已接单</string>
+    <string name="user_order_datile_tv_missed_single">未接单</string>
+    <string name="user_order_datile_tv_have_ecipient">已收件</string>
+    <string name="user_order_datile_tv_have_cancle">已取消</string>
+    <string name="user_order_datile_tv_no_ecipient">未收件</string>
+    <string name="user_order_datile_tv_single_number">录入快递单号</string>
+    <string name="user_order_datile_tv_single_number1">快递单号：</string>
+    <string name="user_order_datile_tv_addressee_number">收件人手机号：</string>
+    <string name="user_order_datile_tv_single_number111">请输入快递单号</string>
+    <string name="user_order_datile_tv_addressee_number11">请输入收件人手机号</string>
+    <string name="user_order_datile_tv_single_number11">23334234234234</string>
+    <string name="user_order_datile_tv_addressee_number1">15856174803</string>
+    <string name="user_order_datile_tv_saapunut">已送达</string>
+    <string name="user_order_datile_tv_undelivered">未送达</string>
+    <string name="user_order_datile_tv_wait">等待收件</string>
+    <string name="user_order_datile_toast_phone">收件人手机号不能为空</string>
+    <string name="user_order_datile_toast_deliverynO">快递单号不能为空</string>
+    <!-- item_user_order -->
+    <string name="item_user_order_tv_logistics">全速物流</string>
+    <string name="item_user_order_tv_name">李师傅</string>
+    <string name="item_user_order_tv_wait">等待接单</string>
+    <string name="item_user_order_tv_wait1">已接单</string>
+    <string name="item_user_order_tv_start">上海 浦东 李冰路1106号</string>
+    <string name="item_user_order_tv_start1">上海 浦东 李冰路1%1$s6号</string>
+    <string name="item_user_order_tv_end">上海 浦东 李冰路6号</string>
+    <string name="item_user_order_tv_time">04年5月24日　12:30</string>
+    <string name="item_user_order_tv_evaluate">未评价</string>
+    <string name="item_user_order_tv_yutime">预约时间</string>
+    <!-- 系统设置 -->
+    <string name="user_setting_top_title">系统设置</string>
+    <string name="user_setting_tv_1">常用地址</string>
+    <string name="user_setting_tv_2">账号绑定</string>
+    <string name="user_setting_tv_3">通知开关</string>
+    <string name="user_setting_tv_4">快递指南</string>
+    <string name="user_setting_tv_5">意见反馈</string>
+    <string name="user_setting_tv_6">关于我们</string>
+    <string name="set_service_item">服务条款</string>
+    <string name="set_connect_us">联系我们</string>
+    <string name="set_vision">版本</string>
+    <string name="user_setting_quit">退出登录</string>
+    <string name="common_address_title">常用地址</string>
+    <string name="item_receipt_dialog_tv_title">请输入相关信息，小马为您发短信提醒收件。</string>
+    <string name="item_receipt_dialog_bt">提交</string>
+    <string name="item_receipt_dialog_tv">暂不输入快递信息</string>
+    <string name="item_receipt_dialog_et_order_number">快递单号</string>
+    <string name="item_receipt_dialog_et_phone_nomber">收件人手机号</string>
+    <!-- 意见反馈 -->
+    <string name="feedback_top_title">意见反馈</string>
+    <string name="feedback_toast_tv">请先输入您的意见</string>
+    <string name="feedback_et_context">给我们一些建议，让我们更加努力</string>
+    <string name="feedback_tv_orther">其他反馈途径</string>
+    <string name="feedback_tv_phone">联系电话：</string>
+    <string name="feedback_tv_qq">企业QQ：</string>
+    <string name="feedback_tv_qq1">1665416115</string>
+    <string name="feedback_tv_sina_blog">新浪微博：</string>
+    <string name="feedback_tv_wechat">微信公众号：</string>
+    <string name="init_service_tel">400-119-3721</string>
+    <string name="init_company_qq">1665416115</string>
+    <string name="init_sina_wei_bo">马布科技_马上快递</string>
+    <string name="init_tecent_we_chat">mashangkuaidi</string>
+    <!-- 快递喜好 -->
+    <string name="express_preferences_title">快递喜好 </string>
+    <string name="express_preferences_tv_title">特别提醒：您可以根据您的喜好最多屏蔽3家快递公司。</string>
+    <string name="index_map_toast">网络太不给力了，请重试。</string>
+    <string name="dialog_error_btn">知道了</string>
+
+    <string-array name="getdata_msg">
+        <item>网络太不给力了，请重试。</item>
+        <item>网络太不给力了，请重试。</item>
+        <item>网络太不给力了，请重试。</item>
+        <item>网络太不给力了，请重试。</item>
+    </string-array>
+    <!-- 支付与评价 -->
+
+    <string name="pay_evaluate_top_title">支付与评价</string>
+    <string name="pay_evaluate_tv_payment_confirmation">确认支付</string>
+    <string name="pay_evaluate_tv_balance">运费 ￥</string>
+    <string name="pay_evaluate_tosat_balance">请输入运费</string>
+    <string name="pay_evaluate_tosat_phone">请输入收件人手机号</string>
+    <string name="pay_evaluate_tosat_single_number">请输入快递单号</string>
+    <string name="pay_evaluate_tosat_deduction">您好，抵用金额应大于零元，请重新输入抵用金额</string>
+    <string name="pay_evaluate_tosat_deduction_">您好，抵用金额应小于可用余额，请重新输入抵用金额</string>
+    <string name="pay_evaluate_tosat_deduction_1">您好，抵用金额应小于运费，请重新输入抵用金额</string>
+    <string name="pay_evaluate_tv_also_pay">还需支付现金</string>
+    <string name="pay_evaluate_tv_credit_available">使用余额 （可用余额%1$s元）</string>
+    <string name="pay_evaluate_tv_yuan">元</string>
+    <string name="pay_evaluate_htm_balance">输入抵用金额</string>
+    <string name="pay_evaluate_tv_pay_succeed">成功支付运费</string>
+    <string name="pay_evaluate_tv_pay_fail">支付运费失败</string>
+    <string name="pay_evaluate_tv_award">点击抽取奖励</string>
+    <string name="pay_evaluate_htm_phone">输入收件人号码短信通知</string>
+    <string name="pay_evaluate_tv_award_suceess_money">恭喜您获得\n%1$s元奖励！</string>
+    <string name="pay_evaluate_tv_award_suceess">已放入您的账户中，\n可在"我的余额"中查询。</string>
+    <!-- 我的余额 -->
+    <string name="my_balance_top_title">我的余额</string>
+    <string name="my_balance_tv_surplus">剩余总额：</string>
+    <string name="my_balance_tv_toast_no">抱歉，您的余额为零不能使用余额</string>
+    <string name="title_activity_feed_back">FeedBackActivity</string>
+    <string name="my_balance_tv_hint_phone">请输入相关信息，小马为您短信提醒收件。</string>
+    <!-- 请输入相关信息，小马为您短信提醒收件。 -->
+    <!-- 二维码 -->
+    <string name="capture_tip">请将条码置于取景框内扫描</string>
+    <!-- 友盟分享 -->
+    <string name="pull_to_refresh_pull_label" translatable="false">向下拉动可以刷新</string>
+    <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label" translatable="false">加载中&#8230;</string>
+    <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
+    <string name="umeng_socialize_network_break_alert" translatable="false">请连接网络后再尝试！</string>
+    <string name="umeng_socialize_comment" translatable="false">评论</string>
+    <string name="umeng_socialize_comment_detail" translatable="false">评论详情</string>
+    <string name="umeng_socialize_back" translatable="false">返回</string>
+    <string name="umeng_socialize_near_At" translatable="false">最近\@的好友</string>
+    <string name="umeng_socialize_friends" translatable="false">关注的好友</string>
+    <string name="umeng_socialize_send" translatable="false">发布</string>
+    <string name="umeng_socialize_tip_blacklist" translatable="false">对不起，因为违反了用户协议您已被禁言.</string>
+    <string name="umeng_socialize_tip_loginfailed" translatable="false">登录失败&#8230;</string>
+    <string name="umeng_socialize_msg_sec" translatable="false">秒前</string>
+    <string name="umeng_socialize_msg_min" translatable="false">分钟前</string>
+    <string name="umeng_socialize_msg_hor" translatable="false">小时前</string>
+    <string name="umeng_socialize_ucenter_login_title_guide" translatable="false">游客登录</string>
+    <string name="umeng_socialize_ucenter_login_title_platform" translatable="false">登录帐号</string>
+
+    <dimen name="alphabet_size">12dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
+
+    <string name="umeng_socialize_share_content">友盟社会化组件（SDK）让移动应用快速整合社交分享功能，我们简化了社交平台的接入，为开发者提供坚实的基础服务。（一）支持各大主流社交平台， 
+												（二）支持图片、文字、gif动图、音频、视频；@好友，关注官方微博等功能。
+												（三）提供详尽的后台用户社交行为分析。www.umeng.com/social</string>
+    <string name="umeng_socialize_login_qq">QQ空间</string>
+    <string name="umeng_socialize_login">登录</string>
+    <string name="umeng_socialize_text_choose_account">选择已有帐号登录</string>
+    <string name="umeng_socialize_text_authorize">授权</string>
+    <string name="umeng_socialize_text_unauthorize">未授权</string>
+    <string name="umeng_socialize_text_ucenter">个人中心</string>
+    <string name="umeng_socialize_text_login_fail">登录失败了，请重试</string>
+    <string name="umeng_socialize_text_comment_hint">说点什么吧&#8230;</string>
+    <string name="umeng_socialize_text_friend_list">好友列表</string>
+    <string name="umeng_socialize_text_visitor">游客</string>
+    <string name="umeng_socialize_text_tencent_no_connection">无法连接到腾讯微博客户端</string>
+    <string name="umeng_socialize_text_tencent_oauth_login_fail">授权登录失败</string>
+    <string name="umeng_socialize_text_tencent_version_no_match">版本不匹配，SSO只对微博客户端V3.8.1及以上的版本提供支持</string>
+    <string name="umeng_socialize_text_tencent_no_install">未安装腾讯微博客户端</string>
+    <string name="umeng_socialize_text_waitting">请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin">跳转微信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin_circle">跳转朋友圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_yixin">跳转易信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_yixin_circle">跳转易信朋友圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qq">跳转QQ中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qzone">跳转QZone中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_redirect">跳转</string>
+    <string name="umeng_socialize_text_waitting_message">,请稍候...</string>
+    <string name="umeng_socialize_text_loading_message">载入中,请稍候...</string>
+    <!-- 平台名称 -->
+    <string name="umeng_socialize_text_tencent_key">腾讯微博</string>
+    <string name="umeng_socialize_text_sina_key">新浪微博</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_qq_zone_key">QQ空间</string>
+    <string name="umeng_socialize_text_renren_key">人人网</string>
+    <string name="umeng_socialize_text_douban_key">豆瓣网</string>
+    <string name="umeng_socialize_text_weixin_key">微信</string>
+    <string name="umeng_socialize_text_weixin_circle_key">微信朋友圈</string>
+    <string name="umeng_socialize_text_add_custom_platform">请配置用户平台</string>
+    <string name="umeng_example_home_btn_plus">社交分享</string>
+    <string name="umeng_socialize_text_waitting_share">分享中&#8230;</string>
+    <string name="umeng_socialize_content_hint">说点啥&#8230;</string>
+    <string name="umeng_socialize_cancel_btn_str">取消</string>
+    <string name="umeng_socialize_send_btn_str">发送</string>
+    <string name="umeng_socialize_img_des"></string>
+    <string name="umeng_socialize_share">分享</string>
+    <string name="com_facebook_loading">Loading...</string>
+
+</resources>

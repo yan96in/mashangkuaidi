@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.striveen.express"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/index_left_backgroup"
+    tools:context=".activity.Index1Activity" >
+
+    <RelativeLayout
+        android:id="@+id/index1_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/index1_iv_top_handle"
+            style="@style/text_padding_all_10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="iv_top_handle"
+            android:src="@drawable/index_handle_left" />
+
+        <TextView
+            style="@style/text_padding_all_5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/index_top_tetle"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/index1_bottom_ll"
+        android:layout_below="@+id/index1_top_rl" >
+
+        <LinearLayout
+            android:id="@+id/index1_ll_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/TextColorWhite"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/index1_locate_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/index_top_backgroup" >
+
+                <ImageView
+                    android:id="@+id/index1_iv_locate"
+                    style="@style/text_padding_all_10dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/index_iv_mylocate" />
+
+                <TextView
+                    android:id="@+id/index1_tv_mylocate"
+                    style="@style/text_padding_all_5dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/index1_iv_mylocate"
+                    android:layout_toRightOf="@+id/index1_iv_locate"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/index1_iv_mylocate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/index_top_right" />
+            </RelativeLayout>
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/index1_my_mapv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" >
+            </com.baidu.mapapi.map.MapView>
+
+            <ImageView
+                android:id="@+id/index1_iv_map_locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dip"
+                android:layout_marginTop="-72dip"
+                android:clickable="true"
+                android:onClick="map_locate"
+                android:src="@drawable/index_map_locate"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/index1_locate_rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/index_top_backgroup"
+                android:visibility="invisible" >
+
+                <TextView
+                    style="@style/text_padding_all_5dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/index1_ll_map1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/index1_locate_rl1" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/index1_voice_backgroud1" />
+
+                <RelativeLayout
+                    android:layout_width="150dip"
+                    android:layout_height="150dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/index1_yuan"
+                    android:orientation="vertical" >
+
+                    <com.striveen.express.view.RoundProgressBar
+                        android:id="@+id/index1_rpb"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android_custom:roundProgressColor="#ffffffff"
+                        android_custom:roundWidth="1dip"
+                        android_custom:textIsDisplayable="false" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/index1_voice" />
+
+                        <TextView
+                            android:id="@+id/index1_tv_time"
+                            style="@style/text_padding_all_5dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/index1_tv_recording_number"
+                            android:textColor="@color/TextColorWhite"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <!-- 最底部布局 -->
+
+    <RelativeLayout
+        android:id="@+id/index1_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/index_bottom_backgroup" >
+
+        <TextView
+            android:id="@+id/index1_tv_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="55dip"
+            android:layout_marginRight="55dip"
+            android:background="@drawable/index_iv_recording1"
+            android:gravity="center"
+            android:text="@string/index1_tv_voice"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

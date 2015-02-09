@@ -1,0 +1,87 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+
+-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+   public *;
+}
+
+#保存被AndroidManifest.xml调用或者webview的类。这是因为proguard会移除没有被调用的代码。
+-keep
+public class *
+extends android.app.Activity {*;}                     
+-keep
+public class *
+extends android.app.Application  {*;}                
+-keep
+public class *
+extends android.app.Service                      {*;}
+-keep
+public class *
+extends android.content.BroadcastReceiver        {*;}
+-keep
+public class *
+extends android.content.ContentProvider          {*;}
+-keep
+public class *
+extends android.app.backup.BackupAgentHelper     {*;}
+-keep
+public class *
+extends android.preference.Preference {*;}
+
+#第三方类库
+
+-keep public class android.** {*;}
+-dontwarn com.google.**
+-keep public class com.google.** {*;}
+#Apache
+-dontwarn org.**
+-keep public class org.** {*;}
+#信鸽推送,腾讯相关，腾讯微博
+-dontwarn com.tencent.**
+-keep public class com.tencent.** {*;}
+#baidumap
+-dontwarn com.baidu.**
+-keep public class com.baidu.** {*;}
+#友盟分享
+-dontwarn com.umeng.** 
+-keep public class com.umeng.** {*;}
+
+
+
+#留所有具有公有访问权限的类和其公共成员。
+#其实这一步可以代替上面所有的keep语句，彻底将误删的概率降到最低。
+#-keepclasseswithmembers
+#class *{
+#    public *;
+#}
+
+#在github上的开源proguarddemo上学来的，删除Log代码
+-assumenosideeffects
+class android.util.Log
+ {
+    public static ***
+ e(...);
+    public static ***
+ w(...);
+    public static ***
+ wtf(...);
+    public static ***
+ d(...);
+    public static ***
+ v(...);
+}
